@@ -17,4 +17,4 @@ def obtener_dato_de_prueba(pregunta):
     datos = respuesta.json()
     return datos["candidates"][0]["content"]["parts"][0]["text"]
 
-print(obtener_dato_de_prueba("¿cual es la mejor unidad zerg?"))
+print(obtener_dato_de_prueba("¿Cuál es la mejor ciudad de Chile en 20 palabras?"))
