@@ -6,7 +6,7 @@ load_dotenv()
   
 def armar_peticion(pregunta):
      if not pregunta:
-     	raise ValueError("Favor incluir pregunta")
+     	raise ValueError("Error: Favor incluir pregunta")
      api_key = os.getenv("GEMINI_API_KEY")
      modelo = "gemini-3.5-flash-lite"
      url = f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent?key={api_key}"
@@ -29,9 +29,23 @@ def extraer_texto(datos):
 	except (KeyError, IndexError):
 		raise RuntimeError("No se pudo extraer el texto de la respuesta.")
 
-def obtener_dato_de_prueba(pregunta):
+def costo_pregunta(datos, precio_entrada, precio_salida):
+	try:
+		uso = datos["usageMetadata"]
+		token_input = uso.get("promptTokenCount", 0)
+		token_output_count = uso.get("outputTokenCount", 0)
+		costo = (token_input * precio_entrada) + (token_output_count * precio_salida) 
+		return costo 
+	except (KeyError, IndexError):
+		raise RuntimeError("No se pudo extraer el conteo de tokens.")
+
+def obtener_dato_prueba(pregunta):
      url, body = armar_peticion(pregunta)
      datos = enviar_peticion(url, body)
-     return extraer_texto(datos)
+     texto = extraer_texto(datos)
+     costo = costo_pregunta(datos, 0.30 / 1000000, 2.5 / 1000000)
+     
+     return texto, costo
 
-print(obtener_dato_de_prueba("¿Cuál es la mejor ciudad de Chile en 20 palabras?"))
+# solo print para pruebas, no es parte de la función principal
+print(obtener_dato_prueba("¿Cuál es la mejor ciudad de Chile en 20 palabras?"))
