@@ -1,0 +1,47 @@
+[
+  {
+    "nombre": "evaluar_ciudad",
+    "system_instruction": "Responde únicamente con un JSON con las claves 'calidad_de_vida', 'poblacion' y 'riqueza'.",
+    "ejemplo_usuario": "¿Cómo calificarías las condiciones de vida en Santiago de Chile?",
+    "claves_esperadas": ["calidad_de_vida", "poblacion", "riqueza"],
+    "response_schema": {
+      "type": "OBJECT",
+      "properties": {
+        "calidad_de_vida": { "type": "STRING" },
+        "poblacion": { "type": "NUMBER" },
+        "riqueza": { "type": "NUMBER" }
+      },
+      "required": ["calidad_de_vida", "poblacion", "riqueza"]
+    }
+  },
+  {
+    "nombre": "equipos_futbol_chileno",
+    "system_instruction": "Responde únicamente con un JSON con las claves 'equipo', 'ciudad' y 'division' ('Primera División', 'Primera B' o 'Segunda División').",
+    "ejemplo_usuario": "¿A qué ciudad y división pertenece el club Cobreloa?",
+    "claves_esperadas": ["equipo", "ciudad", "division"],
+    "response_schema": {
+      "type": "OBJECT",
+      "properties": {
+        "equipo": { "type": "STRING" },
+        "ciudad": { "type": "STRING" },
+        "division": { "type": "STRING" }
+      },
+      "required": ["equipo", "ciudad", "division"]
+    }
+  },
+  {
+    "nombre": "tasa_natalidad_latinoamerica",
+    "system_instruction": "Responde únicamente con un JSON con las claves 'pais', 'tasa_natalidad' (nacimientos por cada 1000 habitantes) y 'tendencia' ('creciente', 'decreciente' o 'estable').",
+    "ejemplo_usuario": "¿Cuál es la tasa de natalidad estimada y su tendencia en Chile?",
+    "claves_esperadas": ["pais", "tasa_natalidad", "tendencia"],
+    "response_schema": {
+      "type": "OBJECT",
+      "properties": {
+        "pais": { "type": "STRING" },
+        "tasa_natalidad": { "type": "NUMBER" },
+        "tendencia": { "type": "STRING" }
+      },
+      "required": ["pais", "tasa_natalidad", "tendencia"]
+    }
+  }
+]
