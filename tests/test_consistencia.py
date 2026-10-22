@@ -17,6 +17,9 @@ registro = {}
 ruta_prompts = BASE_DIR / "src" / "banco_de_prompts.json"
 ruta_resultados = BASE_DIR / "prompts" / "registro_resultados.json"
 
+# Modelo para pruebas
+modelo = "gemini-3.5-flash-lite"
+
 # abrimos banco de promppts json
 with open(ruta_prompts, "r", encoding="utf-8") as archivo_prompts:
     banco_de_prompts = json.load(archivo_prompts)
@@ -28,6 +31,7 @@ for prompt in banco_de_prompts:
     for intento in range(intentos):
         url, body = cmr.armar_peticion(
             prompt["ejemplo_usuario"],
+            modelo,
             prompt["system_instruction"],
             prompt.get("response_schema"),
         )

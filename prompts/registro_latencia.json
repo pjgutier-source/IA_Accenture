@@ -1,0 +1,34 @@
+{
+  "Gemini 3.5 Flash-Lite": {
+    "modelo": "gemini-3.5-flash-lite",
+    "intentos": 2,
+    "latencias": [
+      2.0,
+      2.0
+    ],
+    "latencia_promedio": 2.0,
+    "costo_ultima_peticion_usd": 1.86e-05,
+    "estado": "Exitoso"
+  },
+  "Gemini 3.1 Flash-Lite": {
+    "modelo": "gemini-3.1-flash-lite",
+    "intentos": 2,
+    "latencias": [
+      11.47,
+      12.63
+    ],
+    "latencia_promedio": 12.05,
+    "costo_ultima_peticion_usd": 7.8e-05,
+    "estado": "Exitoso"
+  },
+  "Gemini 3.8 Flash": {
+    "modelo": "gemini-3.8-flash",
+    "intentos": 1,
+    "latencias": [
+      65.8
+    ],
+    "latencia_promedio": 65.8,
+    "costo_ultima_peticion_usd": 0.0001785,
+    "estado": "Exitoso (alta latencia por congestión)"
+  }
+}
