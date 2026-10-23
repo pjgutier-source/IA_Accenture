@@ -68,7 +68,7 @@ GEMINI_API_KEY=tu_llave_aqui
 
 ### 4. Ejecutar el proyecto
 
-Ejecuta el script principal [main.py](file:///c:/Users/pjgut/IA_Accenture/main.py):
+Ejecuta el script principal en la raiz del proyecto [main.py]:
 
 ```powershell
 python main.py
