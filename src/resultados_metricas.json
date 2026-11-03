@@ -1,0 +1,142 @@
+[
+  {
+    "consulta": "¿Qué es Python?",
+    "respuesta": "Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, caracterizado por su sintaxis clara y legible.",
+    "precision": 0.3333333333333333,
+    "cobertura": 1.0,
+    "f1": 0.5
+  },
+  {
+    "consulta": "¿Cuándo se creó Python?",
+    "respuesta": "Python fue creado en 1991 por Guido van Rossum.",
+    "precision": 0.5555555555555556,
+    "cobertura": 1.0,
+    "f1": 0.7142857142857143
+  },
+  {
+    "consulta": "¿Qué es una lista en Python?",
+    "respuesta": "Una lista en Python es una estructura de datos ordenada y mutable que permite almacenar una colección de elementos de cualquier tipo.",
+    "precision": 0.3181818181818182,
+    "cobertura": 0.875,
+    "f1": 0.4666666666666667
+  },
+  {
+    "consulta": "¿Quién creó el lenguaje Python?",
+    "respuesta": "El lenguaje Python fue creado por Guido van Rossum.",
+    "precision": 0.7777777777777778,
+    "cobertura": 1.0,
+    "f1": 0.8750000000000001
+  },
+  {
+    "consulta": "¿Qué es una tupla en Python?",
+    "respuesta": "Una tupla en Python es una estructura de datos ordenada e inmutable que permite almacenar una colección de elementos de cualquier tipo.",
+    "precision": 0.36363636363636365,
+    "cobertura": 1.0,
+    "f1": 0.5333333333333333
+  },
+  {
+    "consulta": "¿Qué es un diccionario en Python?",
+    "respuesta": "Un diccionario en Python es una estructura de datos mutable que almacena pares de clave-valor de manera desordenada y optimizada para búsquedas rápidas.",
+    "precision": 0.30434782608695654,
+    "cobertura": 0.7,
+    "f1": 0.42424242424242425
+  },
+  {
+    "consulta": "¿Qué función se utiliza para mostrar texto en pantalla en Python?",
+    "respuesta": "La función que se utiliza para mostrar texto en pantalla en Python es `print()`.",
+    "precision": 0.35714285714285715,
+    "cobertura": 1.0,
+    "f1": 0.5263157894736842
+  },
+  {
+    "consulta": "¿Cómo se define una función en Python?",
+    "respuesta": "Una función en Python se define utilizando la palabra clave `def` seguida del nombre de la función y paréntesis con los parámetros opcionales.",
+    "precision": 0.391304347826087,
+    "cobertura": 1.0,
+    "f1": 0.5625
+  },
+  {
+    "consulta": "¿Qué es la indentación en Python?",
+    "respuesta": "La indentación en Python es el uso de espacios en blanco al principio de una línea para definir la estructura y la jerarquía de los bloques de código.",
+    "precision": 0.39285714285714285,
+    "cobertura": 0.7333333333333333,
+    "f1": 0.5116279069767441
+  },
+  {
+    "consulta": "¿Qué tipo de dato representa valores de verdadero o falso en Python?",
+    "respuesta": "El tipo de dato que representa valores de verdadero o falso en Python es el tipo booleano (`bool`).",
+    "precision": 0.3888888888888889,
+    "cobertura": 1.0,
+    "f1": 0.56
+  },
+  {
+    "consulta": "¿Cómo se escribe un comentario de una sola línea en Python?",
+    "respuesta": "Se escribe utilizando el símbolo de almohadilla (#) al inicio del comentario.",
+    "precision": 0.5454545454545454,
+    "cobertura": 0.75,
+    "f1": 0.631578947368421
+  },
+  {
+    "consulta": "¿Qué método se usa para agregar un elemento al final de una lista?",
+    "respuesta": "El método utilizado para agregar un elemento al final de una lista es `append()`.",
+    "precision": 0.21428571428571427,
+    "cobertura": 0.6,
+    "f1": 0.3157894736842105
+  },
+  {
+    "consulta": "¿Para qué se utiliza la función len en Python?",
+    "respuesta": "La función `len` se utiliza para devolver el número de elementos que contiene un objeto, como una cadena, lista o diccionario.",
+    "precision": 0.38095238095238093,
+    "cobertura": 0.6153846153846154,
+    "f1": 0.47058823529411764
+  },
+  {
+    "consulta": "¿Qué palabras clave se usan para el manejo de excepciones en Python?",
+    "respuesta": "Las palabras clave para el manejo de excepciones en Python son `try`, `except`, `else` y `finally`.",
+    "precision": 0.375,
+    "cobertura": 0.75,
+    "f1": 0.5
+  },
+  {
+    "consulta": "¿Qué es un conjunto o set en Python?",
+    "respuesta": "Un conjunto o set en Python es una colección desordenada y mutable de elementos únicos que no permite duplicados.",
+    "precision": 0.3684210526315789,
+    "cobertura": 0.875,
+    "f1": 0.5185185185185185
+  },
+  {
+    "consulta": "¿Cómo se importa un módulo o librería en Python?",
+    "respuesta": "Se importa un módulo o librería en Python utilizando la palabra reservada `import` seguida del nombre del módulo.",
+    "precision": 0.2222222222222222,
+    "cobertura": 0.6666666666666666,
+    "f1": 0.3333333333333333
+  },
+  {
+    "consulta": "¿Qué representa el valor None en Python?",
+    "respuesta": "El valor `None` en Python representa la ausencia de un valor o un objeto nulo.",
+    "precision": 0.5333333333333333,
+    "cobertura": 0.8,
+    "f1": 0.64
+  },
+  {
+    "consulta": "¿Cómo se convierte un texto a número entero en Python?",
+    "respuesta": "Se convierte utilizando la función `int()`.",
+    "precision": 1.0,
+    "cobertura": 1.0,
+    "f1": 1.0
+  },
+  {
+    "consulta": "¿Qué instrucción se usa para salir de un bucle antes de tiempo?",
+    "respuesta": "La instrucción que se usa para salir de un bucle antes de tiempo es `break`.",
+    "precision": 0.26666666666666666,
+    "cobertura": 0.8,
+    "f1": 0.4
+  },
+  {
+    "consulta": "¿Qué es una función lambda en Python?",
+    "respuesta": "Una función lambda en Python es una función anónima y de una sola línea definida mediante la palabra reservada `lambda`.",
+    "precision": 0.45,
+    "cobertura": 1.0,
+    "f1": 0.6206896551724138
+  }
+]
