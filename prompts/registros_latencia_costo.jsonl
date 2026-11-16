@@ -1,0 +1,1 @@
+{"timestamp": "2026-11-16T23:08:01.766663+00:00", "pregunta": "que hace el cliente si una llamada tarda demasiado?", "k": 3, "tiempos_ms": {"embed_y_busqueda": 1143.39, "generacion": 1678.52}, "tiempo_total_ms": 2821.91, "tokens": {"input_tokens": 150, "output_tokens": 24, "total_tokens": 174, "input_token_details": {"cache_read": 0}}}
