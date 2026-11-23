@@ -85,6 +85,7 @@ if __name__ == "__main__":
 
     # Guarda el registro en la carpeta prompts/
     with open(RUTA_SALIDA_JSONL, "a", encoding="utf-8") as f:
-        f.write(json.dumps(registro, ensure_ascii=False) + "\n")
+        f.write(json.d
+        umps(registro, ensure_ascii=False) + "\n")
 
     print(f"\nRegistro guardado en {RUTA_SALIDA_JSONL}")
